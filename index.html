@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charles Benton Theissen — Developer & Product Builder</title>
-  <meta name="description" content="Independent developer building AI-powered Chrome extensions and SaaS products. ShopSummary, StaySummary, Price Patrol, PropPull.">
+  <title>Charles Benton Theissen — Software Engineer & Product Builder</title>
+  <meta name="description" content="Software engineer and product builder. M.S. Computer Science (AI) at USC. Building AI-powered Chrome extensions, trading bots, and SaaS products.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -14,11 +14,12 @@
   <!-- Nav -->
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo">BT</a>
+      <a href="#" class="nav-logo">CBT</a>
       <div class="nav-links">
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -29,12 +30,26 @@
     <div class="container">
       <div class="hero-badge">Available for contract work</div>
       <h1>Charles Benton Theissen</h1>
-      <p class="hero-title">Independent Developer & Product Builder</p>
-      <p class="hero-sub">I build AI-powered Chrome extensions and SaaS products that solve real problems. Focused on shipping fast, iterating on user feedback, and generating revenue.</p>
+      <p class="hero-title">Software Engineer & Product Builder</p>
+      <p class="hero-sub">M.S. Computer Science (AI) at USC. I build predictive models, AI-powered products, and automated systems. From $100M+ investment forecasts cited in The New York Times to Chrome extensions with thousands of users.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">8+</div>
+          <div class="hero-stat-label">Products Shipped</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">$100M+</div>
+          <div class="hero-stat-label">Investment Informed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">NYT</div>
+          <div class="hero-stat-label">Work Cited</div>
+        </div>
+      </div>
       <div class="hero-links">
         <a href="https://github.com/broadben" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="https://linkedin.com/in/charles-theissen-554a41155" target="_blank" class="btn btn-ghost">LinkedIn</a>
         <a href="mailto:broadbenapps@gmail.com" class="btn btn-ghost">Hire Me</a>
-        <a href="#projects" class="btn btn-ghost">View Projects</a>
       </div>
     </div>
   </section>
@@ -43,7 +58,7 @@
   <section class="projects" id="projects">
     <div class="container">
       <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Chrome extensions and tools I've built and shipped.</p>
+      <p class="section-sub">Products I've built, shipped, and monetized.</p>
 
       <div class="project-grid">
 
@@ -52,16 +67,16 @@
             <span class="project-icon">🛒</span>
             <div>
               <h3>ShopSummary</h3>
-              <span class="project-tag">Chrome Extension</span>
+              <span class="project-tag">Chrome Extension — Live on Web Store</span>
             </div>
           </div>
-          <p>AI-powered product review summarizer for Amazon, Walmart, Target, and 9 more retailers. Quality, value, and authenticity scores. Price history charts. Fake review detection. Side panel UI with dark theme.</p>
+          <p>AI-powered product review summarizer for Amazon, Walmart, Target, and 9 more retailers. Scores for quality, value, and review authenticity. Stratified review sampling, price history charts, fake review detection. Dark-themed side panel UI.</p>
           <div class="project-tech">
             <span>JavaScript</span>
             <span>Chrome Side Panel API</span>
             <span>Cloudflare Workers</span>
             <span>Claude AI</span>
-            <span>ExtensionPay</span>
+            <span>Stripe</span>
           </div>
           <div class="project-links">
             <a href="https://broadben.github.io/shopsummary/" target="_blank">Landing Page</a>
@@ -74,10 +89,10 @@
             <span class="project-icon">🏠</span>
             <div>
               <h3>StaySummary</h3>
-              <span class="project-tag">Chrome Extension</span>
+              <span class="project-tag">Chrome Extension — Live on Web Store</span>
             </div>
           </div>
-          <p>AI-powered accommodation review summarizer for Airbnb, Booking.com, and 5 more platforms. Host, safety, and value scores. Neighborhood analysis with walkability, crime data, and transit info.</p>
+          <p>AI-powered accommodation review summarizer for Airbnb, Booking.com, and 5 more platforms. Host, safety, and value scores. Neighborhood analysis using OpenStreetMap + FBI crime data. Score cards swap between Summary and Neighborhood tabs.</p>
           <div class="project-tech">
             <span>JavaScript</span>
             <span>Chrome Side Panel API</span>
@@ -99,11 +114,12 @@
               <span class="project-tag">Chrome Extension</span>
             </div>
           </div>
-          <p>Cross-retailer price comparison tool. Automatically finds cheaper prices for the same product across Amazon, Walmart, eBay, Target, and Best Buy. AI-powered product matching.</p>
+          <p>Cross-retailer price comparison tool. Finds cheaper prices for the same product across Amazon, Walmart, eBay, Target, and Best Buy. AI-powered product matching ensures accurate variant comparison (model, size, color).</p>
           <div class="project-tech">
             <span>JavaScript</span>
             <span>SerpAPI</span>
-            <span>Chrome Extension</span>
+            <span>Chrome MV3</span>
+            <span>Affiliate Integration</span>
           </div>
           <div class="project-links">
             <a href="https://broadben.github.io/pricepatrol/" target="_blank">Landing Page</a>
@@ -118,7 +134,7 @@
               <span class="project-tag">Chrome Extension + Web App</span>
             </div>
           </div>
-          <p>Real estate property data tool. Pull 50+ fields from public records for any address, auto-fill ZipForms Plus transaction forms. Side panel with search history and agent profile.</p>
+          <p>Real estate property data tool for agents. Pull 50+ fields from public records for any address and auto-fill ZipForms Plus transaction forms. Side panel with agent profile, search history, and one-click form filling.</p>
           <div class="project-tech">
             <span>JavaScript</span>
             <span>Next.js</span>
@@ -127,8 +143,40 @@
             <span>FEMA API</span>
             <span>Chrome Side Panel</span>
           </div>
-          <div class="project-links">
-            <a href="https://broadben.github.io/proppull-privacy/" target="_blank">Privacy Policy</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📈</span>
+            <div>
+              <h3>Passive Trader</h3>
+              <span class="project-tag">Automated Trading Bot</span>
+            </div>
+          </div>
+          <p>Multi-strategy automated trading bot. Crypto via Kraken, DeFi via Arbitrum L2, stocks via Alpaca. 7 strategies with macro signal overlay. Backtested over 720 days to +22.6% annualized returns. Production-hardened for 24/7 operation.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Kraken API</span>
+            <span>Alpaca API</span>
+            <span>Arbitrum L2</span>
+            <span>Backtesting</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎯</span>
+            <div>
+              <h3>Polymarket Copy Trader</h3>
+              <span class="project-tag">Automated Trading Bot</span>
+            </div>
+          </div>
+          <p>Automated copy trading bot for Polymarket prediction markets. Monitors top-performing wallets and replicates their trades with configurable risk management. Full 4-phase implementation.</p>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>Polymarket CLOB API</span>
+            <span>Risk Management</span>
           </div>
         </div>
 
@@ -137,16 +185,151 @@
             <span class="project-icon">📋</span>
             <div>
               <h3>FlowBoard</h3>
-              <span class="project-tag">Web App</span>
+              <span class="project-tag">SaaS Web App</span>
             </div>
           </div>
-          <p>Kanban-style project management board. Drag-and-drop task management with a clean, minimal interface.</p>
+          <p>AI-powered employee onboarding and offboarding SaaS. Generates role-specific checklists and protocols in seconds. Built for HR managers and People Ops teams at companies of 10-500 employees.</p>
           <div class="project-tech">
             <span>JavaScript</span>
+            <span>AI Generation</span>
             <span>HTML/CSS</span>
           </div>
         </div>
 
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🍻</span>
+            <div>
+              <h3>BarMeet</h3>
+              <span class="project-tag">Social App — Award Winner</span>
+            </div>
+          </div>
+          <p>Social networking app for finding nearby events and meetups at bars. Led 4-person team. Scaled to 60+ users in 3 weeks. Awarded "Best Social Application" at UNC's Modern Web Programming showcase with seed funding offer.</p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>React</span>
+            <span>RESTful APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">2026 — Present</div>
+          <div class="timeline-content">
+            <h3>Independent Developer & Product Builder</h3>
+            <p class="timeline-company">Self-Employed — San Diego, CA</p>
+            <ul>
+              <li>Shipped 5+ AI-powered Chrome extensions to the Chrome Web Store with freemium monetization</li>
+              <li>Built full-stack products end-to-end: Chrome MV3 extensions, Cloudflare Workers, serverless APIs, Stripe payments</li>
+              <li>Developed automated trading systems (crypto + stocks) with backtested +22.6% annualized returns</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2024 — 2026</div>
+          <div class="timeline-content">
+            <h3>Senior Data Analyst</h3>
+            <p class="timeline-company">Ohm Analytics, LLC — San Diego, CA</p>
+            <ul>
+              <li>Engineered 5 predictive market models informing $100M+ investment; forecast cited in The New York Times (6/11/25)</li>
+              <li>Directed team of 5 engineering ETL automation and multi-agent frameworks in Python, reducing pipeline runtime by 98%</li>
+              <li>Built real-time PowerBI dashboards with KPI monitoring across 50+ U.S. markets</li>
+              <li>Automated 30+ monthly SQL queries and report delivery for executive stakeholders</li>
+              <li>Led institutional investor relations, delivering insights that guided $30M in capital allocations</li>
+              <li>Lead author, "Ohm Analytics Quarterly DG Solar and Storage Report" (5 editions, Q3 2024 — Q3 2025)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2021 — Aug 2024</div>
+          <div class="timeline-content">
+            <h3>Financial Analyst</h3>
+            <p class="timeline-company">ICON, PLC — San Diego, CA</p>
+            <ul>
+              <li>Managed $540M portfolio across 12 clinical research project teams</li>
+              <li>Identified $2.7M in recoverable services through budget variance analysis</li>
+              <li>Led cross-functional contract negotiations, processing $30M in amendments maintaining profitability</li>
+              <li>Built predictive forecasting models integrating Oracle, PowerBI, and Salesforce; 95% resource allocation efficiency</li>
+              <li>Developed automated Excel contract model: 75% faster delivery, 23% increased forecast accuracy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">May 2018 — Jul 2018</div>
+          <div class="timeline-content">
+            <h3>Product Development Specialist Intern</h3>
+            <p class="timeline-company">Liine, LLC — Raleigh, NC</p>
+            <ul>
+              <li>Designed custom reporting with SQL-Zapier automation, generating 84% enrollment increase over 4 months</li>
+              <li>Developed 15 VBA macros automating report generation; eliminated 20+ hours of weekly manual work</li>
+              <li>Streamlined client onboarding for 6 new accounts, producing 300% quarterly revenue growth</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2024 — May 2027</div>
+          <div class="timeline-content">
+            <h3>M.S. in Computer Science (Artificial Intelligence)</h3>
+            <p class="timeline-company">University of Southern California — Los Angeles, CA</p>
+            <ul>
+              <li>Coursework: Machine Learning, Deep Learning, Information Retrieval, NLP, Data Mining</li>
+              <li>Multimodal Q&A System using Python, LangChain, and RAG</li>
+              <li>MapReduce Inverted Index processing 500K+ documents on Hadoop cluster</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2017 — May 2021</div>
+          <div class="timeline-content">
+            <h3>B.A. Computer Science, B.S. Economics</h3>
+            <p class="timeline-company">University of North Carolina, Chapel Hill</p>
+            <ul>
+              <li>GPA: 3.5 | Dean's Honor List</li>
+              <li>BarMeet — "Best Social Application" award with seed funding offer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="publications" id="publications">
+    <div class="container">
+      <h2 class="section-title">Publications & Press</h2>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-source">The New York Times</div>
+          <p>Solar forecast cited in "Why Rooftop Solar Could Crash Under the G.O.P Tax Bill" (June 11, 2025)</p>
+        </div>
+        <div class="pub-item">
+          <div class="pub-source">Ohm Analytics</div>
+          <p>Lead Author, "Quarterly DG Solar and Storage Report" — 5 editions for institutional investors (Q3 2024 — Q3 2025)</p>
+        </div>
       </div>
     </div>
   </section>
@@ -157,80 +340,65 @@
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>Languages & Frameworks</h3>
+          <h3>Languages & Tools</h3>
           <div class="skill-tags">
-            <span>JavaScript</span>
             <span>Python</span>
-            <span>HTML/CSS</span>
-            <span>Next.js</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>SQL</span>
+            <span>Java</span>
             <span>Node.js</span>
+            <span>Next.js</span>
+            <span>React</span>
+            <span>HTML/CSS</span>
+            <span>Excel/VBA</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3>Chrome Extension Development</h3>
+          <h3>AI & Machine Learning</h3>
           <div class="skill-tags">
-            <span>Manifest V3</span>
-            <span>Side Panel API</span>
-            <span>Content Scripts</span>
-            <span>Service Workers</span>
-            <span>DOM Scraping</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>AI & APIs</h3>
-          <div class="skill-tags">
-            <span>Claude API</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>NLP</span>
+            <span>RAG</span>
+            <span>LangChain</span>
             <span>Prompt Engineering</span>
-            <span>OpenStreetMap</span>
-            <span>SerpAPI</span>
-            <span>RentCast</span>
-            <span>FBI UCR</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Infrastructure & Payments</h3>
-          <div class="skill-tags">
-            <span>Cloudflare Workers</span>
-            <span>Cloudflare KV</span>
-            <span>Vercel</span>
-            <span>GitHub Pages</span>
-            <span>ExtensionPay</span>
-            <span>Stripe</span>
+            <span>Multi-Agent Frameworks</span>
+            <span>Claude API</span>
           </div>
         </div>
         <div class="skill-group">
           <h3>Data & Analytics</h3>
           <div class="skill-tags">
+            <span>Predictive Modeling</span>
+            <span>ETL Automation</span>
             <span>PowerBI</span>
-            <span>Financial Modeling</span>
-            <span>Excel/VBA</span>
+            <span>Tableau</span>
+            <span>Statistical Analysis</span>
             <span>Data Visualization</span>
-            <span>EIA Data</span>
+            <span>Hadoop/HDFS</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="experience" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Work history — more details coming soon.</p>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2026 — Present</div>
-          <div class="timeline-content">
-            <h3>Independent Developer</h3>
-            <p>Building and shipping AI-powered Chrome extensions and SaaS products. ShopSummary, StaySummary, Price Patrol, PropPull. Revenue generation through freemium subscriptions and affiliate links.</p>
+        <div class="skill-group">
+          <h3>Infrastructure & Platform</h3>
+          <div class="skill-tags">
+            <span>Chrome MV3 Extensions</span>
+            <span>Cloudflare Workers</span>
+            <span>Vercel</span>
+            <span>GitHub Pages</span>
+            <span>Stripe</span>
+            <span>Oracle ERP</span>
+            <span>Salesforce</span>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">Previous</div>
-          <div class="timeline-content">
-            <h3>Ohm Analytics</h3>
-            <p>Solar energy analytics. Residential solar and storage market research, financial modeling, investor presentations, Python automation, PowerBI dashboards.</p>
+        <div class="skill-group">
+          <h3>Leadership</h3>
+          <div class="skill-tags">
+            <span>Cross-Functional Teams</span>
+            <span>Executive Presentations</span>
+            <span>Stakeholder Management</span>
+            <span>Investor Relations</span>
+            <span>Program Management</span>
           </div>
         </div>
       </div>
@@ -250,6 +418,10 @@
           <div class="contact-label">Contract Work</div>
           <div class="contact-value">broadbenapps@gmail.com</div>
         </a>
+        <a href="https://linkedin.com/in/charles-theissen-554a41155" target="_blank" class="contact-card">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">Charles Theissen</div>
+        </a>
         <a href="https://github.com/broadben" target="_blank" class="contact-card">
           <div class="contact-label">GitHub</div>
           <div class="contact-value">github.com/broadben</div>
@@ -261,7 +433,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Charles Benton Theissen</p>
+      <p>San Diego, CA &middot; (919) 909-8416 &middot; &copy; 2026 Charles Benton Theissen</p>
     </div>
   </footer>
 
